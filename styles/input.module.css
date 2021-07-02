@@ -1,0 +1,68 @@
+.inputWrapper {
+  border: 1px solid #7a7a7a;
+  border-radius: 4px;
+  @apply flex  w-full items-center justify-center relative h-12  bg-white  items-center rounded mb-4;
+}
+.inputIconWrapper {
+  @apply flex -mr-px justify-center w-12 p-4;
+}
+
+.inputIcon {
+  @apply flex items-center leading-normal bg-white rounded rounded-r-none text-xl px-3  text-black;
+}
+
+.inputText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ababab;
+  @apply flex-shrink leading-normal w-px flex-1 ring-0 outline-none focus:ring-0 focus:outline-none border-0 h-10 px-3 relative self-center text-xl outline-none;
+}
+
+.inputContainer {
+  @apply w-full my-5;
+}
+
+.label {
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #747474;
+}
+
+.borderInput {
+  border: 1.5px solid #7a7a7a;
+  border-radius: 4px;
+}
+
+.inputText::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  opacity: 1; /* Firefox */
+}
+
+.inputText:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.inputText::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
+}

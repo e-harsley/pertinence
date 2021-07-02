@@ -1,0 +1,4 @@
+.formTitle {
+  font-family: Heebo;
+  @apply text-center text-black font-light text-4xl leading-10;
+}
