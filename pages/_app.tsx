@@ -33,18 +33,18 @@ function MyApp({ Component, pageProps, router }) {
     <GlobalProvider>
       <ToastProvider>
         <Layout>
-        <AnimateSharedLayout>
+        {/* <AnimateSharedLayout>
         <motion.div
       key={router.route}
       initial="out"
       animate="in"
       exit='out'
       variants={pageVariants}
-      transition={pageTransition}
-    >
+      transition={pageTransition} */}
+    {/* > */}
       <Component {...pageProps} key={router.route} />
-      </motion.div>
-      </AnimateSharedLayout>
+      {/* </motion.div>
+      </AnimateSharedLayout> */}
     </Layout>
     </ToastProvider>
     </GlobalProvider>

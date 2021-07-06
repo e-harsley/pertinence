@@ -33,6 +33,14 @@
   color: #747474;
 }
 
+.not-found {
+  text-align: center;
+}
+.not-found a {
+  color: #4979ff;
+  text-decoration: underline;
+}
+
 .borderInput {
   border: 1.5px solid #7a7a7a;
   border-radius: 4px;
