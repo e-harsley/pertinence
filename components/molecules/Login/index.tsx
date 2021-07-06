@@ -8,18 +8,18 @@ const index = ({
     form: { onChange, form, onSubmit },
 }) => {
     return (
-        <div className="flex h-screen w-full items-center justify-center flex-col">
+        <div className="flex h-full xl:h-screen w-full items-center justify-center flex-col">
         <div>
-            <h1 className={styles.formTitle}>Log in <br />to continue</h1>
+            <h1 className={styles.formTitle}>Log in to continue</h1>
         </div>
-        <div className='w-3/5'>
+        <div className='w-4/5 xl:w-3/5'>
            <div>
             <InputField
-            value={form.username || ""}
-            name="username"
-            textType='text'
+            value={form.email || ""}
+            name="email"
+            textType='email'
             iconRight='dd'
-            labelName='username'
+            labelName='Email'
             style={['w-5/5'].join(' ')}
             onChange={onChange}
              />
@@ -35,8 +35,8 @@ const index = ({
             onChange={onChange}
             />
         </div> 
-        <div className="flex justify-center">
-        <CustomButton onClick={onSubmit} title="login" styleClass={['py-4', 'px-8', 'capitalize', 'rounded-sm'].join(' ')} base={true} />
+        <div className="xl:flex justify-center">
+        <CustomButton onClick={onSubmit} title="login" styleClass={['py-2 px-8 w-full sm:w-auto', 'xl:py-4', 'xl:px-8', 'capitalize', 'rounded-sm'].join(' ')} base={true} />
 
         </div>
         </div>

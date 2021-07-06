@@ -1,12 +1,12 @@
 import { title } from 'process'
 import React from 'react'
-import Register from '../../components/molecules/register'
-
+import RegisterUi from '../../components/molecules/register'
+import useForm from '../../components/bond/RegisterBond'
 const index = () => {
    
     return (
         <>
-            <Register />
+            <RegisterUi form ={useForm()} />
         </>
     )
 }

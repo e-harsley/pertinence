@@ -1,4 +1,4 @@
 .formTitle {
   font-family: Heebo;
-  @apply text-center text-black font-light text-4xl leading-10;
+  @apply text-center text-black  xl:mt-0 font-semibold xl:font-light text-lg  xl:text-4xl leading-10;
 }

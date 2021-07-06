@@ -12,11 +12,11 @@ const index = ({children}) => {
     }
     return (
         <div>
-            <div className='grid grid-cols-2'>
-                <div className="col-span-1">
+            <div className='grid grid-rows-3 h-screen xl:grid-cols-2'>
+                <div className="col-span-1 xl:col-start-1  row-span-2">
                     {children}
                 </div>
-                <div className='w-full unset-img h-screen'>
+                <div className='w-full row-start-1 xl:col-start-2  unset-img xl:h-screen'>
                     {imageDisplay}
                 </div>
             </div>

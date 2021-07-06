@@ -1,10 +1,10 @@
 .inputWrapper {
   border: 1px solid #7a7a7a;
   border-radius: 4px;
-  @apply flex  w-full items-center justify-center relative h-12  bg-white  items-center rounded mb-4;
+  @apply flex  w-full items-center justify-center relative h-12  bg-white  items-center rounded;
 }
 .inputIconWrapper {
-  @apply flex -mr-px justify-center w-12 p-4;
+  @apply flex -mr-px justify-center w-12 p-2;
 }
 
 .inputIcon {
@@ -14,14 +14,14 @@
 .inputText {
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 24px;
   color: #ababab;
-  @apply flex-shrink leading-normal w-px flex-1 ring-0 outline-none focus:ring-0 focus:outline-none border-0 h-10 px-3 relative self-center text-xl outline-none;
+  @apply flex-shrink leading-normal w-px flex-1 ring-0 outline-none focus:ring-0 focus:outline-none border-0 h-10 px-3 relative self-center outline-none;
 }
 
 .inputContainer {
-  @apply w-full my-5;
+  @apply w-full mt-3 xl:mt-5;
 }
 
 .label {

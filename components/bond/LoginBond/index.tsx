@@ -1,16 +1,18 @@
 import { useState, useContext, useEffect } from "react";
-// import { GlobalContext } from "../../context/Provider";
+import { GlobalContext } from "../../../context/Provider";
 // import { useHistory } from "react-router-dom";
-// import { login } from "../../context/actions/auth/login";
+import { login } from '../../../context/actions/auth/login';
 
 interface InputName {
-    username: string,
+    email: string,
     password:string,
 }
 
-
 const index = () => {
-    const [form, setForm] = useState({username:'', password:''});
+    
+    const [form, setForm] = useState({email:'', password:''});
+    const { authDispatch, authState: { auth: { loading, error, data }} } = useContext(GlobalContext);
+
 
     const onChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -18,6 +20,7 @@ const index = () => {
 
     const onSubmit = (e) => {
         console.log(form)
+        login(form)(authDispatch);
     }
     
     return { form, onChange, onSubmit};

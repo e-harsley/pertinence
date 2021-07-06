@@ -46,7 +46,7 @@ const index = ({
                     value={value}
                     name={name}
                     className={`${styles.inputText} ${style}`}
-                    placeholder="Password"
+                    placeholder={labelName}
                 />
                 <div className={styles.inputIconWrapper}>
                     <span className={styles.inputIcon}>
@@ -54,6 +54,7 @@ const index = ({
                     </span>
                 </div>
           </div>
+          {error &&  <div className="text-danger_red text-sm">{error}</div>}
         </div>
     )
 }
