@@ -2,7 +2,7 @@ import React from 'react'
 import InputField from '../../atoms/InputField'
 import CustomButton from '../../../components/atoms/Button'
 
-const index = ({ form: { form, onChange, loading,onSubmit,passwordMatchCheck, registerFormValid, validateEmailInput  },}) => {
+const Index = ({ form: { form, onChange,onSubmit,passwordMatchCheck, registerFormValid, validateEmailInput  },}) => {
     
     return (
         <div className='w-full xl:w-4/5 pb-8 flex flex-col justify-center mt-7 xl:ml-14 h-full xl:h-screen'>
@@ -90,7 +90,7 @@ const index = ({ form: { form, onChange, loading,onSubmit,passwordMatchCheck, re
             error={passwordMatchCheck}
             />
         </div>
-        <CustomButton loading={loading} onClick={onSubmit} disabled={registerFormValid || loading}  title="Register" styleClass={['py-2 px-8 mt-3 w-full sm:w-auto', 'px-8', 'capitalize', 'rounded-sm'].join(' ')} base={true} />
+        <CustomButton onClick={onSubmit} disabled={registerFormValid}  title="Register" styleClass={['py-2 px-8 mt-3 w-full sm:w-auto', 'px-8', 'capitalize', 'rounded-sm'].join(' ')} base={true} />
 
             </div>
         </div>
@@ -98,4 +98,4 @@ const index = ({ form: { form, onChange, loading,onSubmit,passwordMatchCheck, re
     )
 }
 
-export default index
+export default Index

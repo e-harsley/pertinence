@@ -13,7 +13,7 @@ interface InputRequirement {
     name?:string
 }
 
-const index = ({
+const Index = ({
     onChange,
     textType,
     iconLeft,
@@ -59,4 +59,4 @@ const index = ({
     )
 }
 
-export default index
+export default Index

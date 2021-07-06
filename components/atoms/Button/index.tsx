@@ -14,7 +14,7 @@ interface ButtonRequirement {
     
 }
 
-const index = ({title,
+const Index = ({title,
     secondary,
     primary,
     neutral,
@@ -58,4 +58,4 @@ const index = ({title,
     )
 }
 
-export default index
+export default Index

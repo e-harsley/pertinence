@@ -1,14 +1,13 @@
 import React from 'react'
-import InputField from '../../components/atoms/InputField'
 import LoginUI from '../../components/molecules/Login'
-import useForm from '../../components/bond/LoginBond'
+import UseForm from '../../components/bond/LoginBond'
 
-function index() {
+function Index() {
     return (
-        <><LoginUI form={useForm()} /></>
+        <><LoginUI form={UseForm()} /></>
     )
 }
 
-index.layout = "UnAuthenticatedLayout"
+Index.layout = "UnAuthenticatedLayout"
 
-export default index
+export default Index

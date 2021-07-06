@@ -4,11 +4,11 @@ import { register } from "../../../context/actions/auth/register";
 import { ToastProvider, useToasts } from 'react-toast-notifications';
 
 
-const index = () => {
+const Index = () => {
     const { addToast } = useToasts();
     
     const [form, setForm] = useState({first_name: '', last_name:'',email:'', password:'', confirm_password:'', phone:'', referrer:''})
-    const { authDispatch, authState: { auth: { loading, error, data }} } = useContext(GlobalContext);
+    // const { authDispatch, authState: { auth: { loading, error, data }} } = useContext(GlobalContext);
     const [passwordMatchCheck, setpasswordMatchCheck] = useState('')
     const [validateEmailInput, setvalidateEmailInput] = useState('')
     const onChange = (e) => {
@@ -35,23 +35,23 @@ const index = () => {
         
       }, [form]);
 
-      useEffect(() => {
-        if (data) {
-          console.log(data);
-          addToast('Saved Successfully', { appearance: 'success' });
-        }
-      }, [data]);
+      // useEffect(() => {
+      //   if (data) {
+      //     console.log(data);
+      //     addToast('Saved Successfully', { appearance: 'success' });
+      //   }
+      // }, [data]);
 
-      useEffect(() => {
-        if (error) {
-          console.log(data);
-          addToast('Saved Successfully', { appearance: 'error' });
-        }
-      }, [data]);
+      // useEffect(() => {
+      //   if (error) {
+      //     console.log(data);
+      //     addToast('Saved Successfully', { appearance: 'error' });
+      //   }
+      // }, [data]);
     
 
     const onSubmit = (e) => {
-        register(form)(authDispatch);
+        // register(form)(authDispatch);
     }
 
     const registerFormValid =
@@ -63,7 +63,7 @@ const index = () => {
     !form.confirm_password?.length || 
     form.password !== form.confirm_password
 
-    return { form, onChange, loading,onSubmit, registerFormValid,  validateEmailInput,  passwordMatchCheck};
+    return { form, onChange,onSubmit, registerFormValid,  validateEmailInput,  passwordMatchCheck};
 }
 
-export default index
+export default Index

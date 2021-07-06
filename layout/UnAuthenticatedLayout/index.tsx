@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 
-const index = ({children}) => {
+const Index = ({children}) => {
     const router = useRouter()
     var imageDisplay
     if(router.pathname === '/login'){
@@ -24,5 +24,5 @@ const index = ({children}) => {
     )
 }
 
-export default index
+export default Index
             

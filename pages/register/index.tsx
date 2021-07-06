@@ -1,16 +1,16 @@
 import { title } from 'process'
 import React from 'react'
 import RegisterUi from '../../components/molecules/register'
-import useForm from '../../components/bond/RegisterBond'
-const index = () => {
+import UseForm from '../../components/bond/RegisterBond'
+const Index = () => {
    
     return (
         <>
-            <RegisterUi form ={useForm()} />
+            <RegisterUi form ={UseForm()} />
         </>
     )
 }
 
-index.layout = "UnAuthenticatedLayout"
+Index.layout = "UnAuthenticatedLayout"
 
-export default index
+export default Index

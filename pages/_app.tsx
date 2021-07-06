@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps, router }) {
     <GlobalProvider>
       <ToastProvider>
         <Layout>
-        <AnimateSharedLayout exitBeforeEnter>
+        <AnimateSharedLayout>
         <motion.div
       key={router.route}
       initial="out"

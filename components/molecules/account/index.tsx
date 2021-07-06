@@ -2,7 +2,7 @@ import React from 'react'
 import InputField from '../../atoms/InputField'
 import CustomButton from '../../../components/atoms/Button'
 
-const index = () => {
+const Index = () => {
     return (
         <div className="settingsBackground pb-10 px-5 w-full xl:w-3/5">
             <div className="grid grid-cols-2 gap-2 xl:gap-5">
@@ -143,4 +143,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

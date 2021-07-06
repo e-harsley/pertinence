@@ -1,6 +1,6 @@
 import React from 'react'
 
-function index() {
+function Index() {
     return (
         <div>
             <h1>Home</h1>
@@ -8,9 +8,9 @@ function index() {
     )
 }
 
-index.layout = "AuthenticatedLayout"
+Index.layout = "AuthenticatedLayout"
 
-export default index
+export default Index
 
 
 
@@ -28,7 +28,7 @@ export default index
 
     //     <p className={styles.description}>
     //       Get started by editing{' '}
-    //       <code className={styles.code}>pages/index.js</code>
+    //       <code className={styles.code}>pages/Index.js</code>
     //     </p>
 
     //     <div className={styles.grid}>

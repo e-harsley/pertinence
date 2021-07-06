@@ -3,30 +3,30 @@ import { GlobalContext } from "../../../context/Provider";
 // import { useHistory } from "react-router-dom";
 import { login } from '../../../context/actions/auth/login';
 
-interface InputName {
-    email: string,
-    password:string,
-}
 
-const index = () => {
-    
+
+
+const Index = () => {
     const [form, setForm] = useState({email:'', password:''});
-    const { authDispatch, authState: { auth: { loading, error, data }} } = useContext(GlobalContext);
-
-
+    let globalContext =useContext(GlobalContext)
+    // const { authDispatch, authState: { auth: { loading, error, data }} }= globalContext
+    
     const onChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
+    useEffect(() => {
+        // setAuthDispatch(globalContext['authDispatch'])
+    }, [])
 
     const onSubmit = (e) => {
         console.log(form)
-        login(form)(authDispatch);
+        // login(form)(authDispatch);
     }
     
     return { form, onChange, onSubmit};
 }
 
-export default index
+export default Index
 
 // export default ({InputName}) => {
 //   const [form, setForm] = useState({username, password}: InputName);

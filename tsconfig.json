@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "helpers/axiosInstance.js", "components/bond/RegisterBond/Index.js", "components/bond/LoginBond/Index.js"  ],
   "exclude": [
     "node_modules"
   ]

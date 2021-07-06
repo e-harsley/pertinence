@@ -8,8 +8,10 @@ import { FaTimes } from "react-icons/fa";
 import Link from 'next/link'
 import {useRouter} from 'next/router'
 
-const index = () => {
-    const router = useRouter()
+
+
+export default function Index() {
+  const router = useRouter()
     const [toggleActive, setToggleActive] = useState(false)
     const toggleButton = () => {
         setToggleActive(!toggleActive)
@@ -143,4 +145,4 @@ const index = () => {
     )
 }
 
-export default index
+

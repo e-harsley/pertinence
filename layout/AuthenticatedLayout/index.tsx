@@ -3,7 +3,7 @@ import React from 'react'
 import Link from "next/link";
 import Header from '../../components/molecules/header'
 
-const index = ({children}) => {
+const Index = ({children}) => {
     return (
         <div>
             <Header />
@@ -12,5 +12,5 @@ const index = ({children}) => {
     )
 }
 
-export default index
+export default Index
 

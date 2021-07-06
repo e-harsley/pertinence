@@ -1,6 +1,6 @@
 import React from 'react'
 
-const index = () => {
+const Index = () => {
     return (
         <div>
             <h1>Market</h1>
@@ -8,6 +8,6 @@ const index = () => {
     )
 }
 
-index.layout = "AuthenticatedLayout"
+Index.layout = "AuthenticatedLayout"
 
-export default index
+export default Index

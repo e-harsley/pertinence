@@ -4,7 +4,7 @@ import * as icons  from 'react-icons/fa';
 import CustomButton from '../../../components/atoms/Button'
 import styles from '../../../styles/login.module.css'
 
-const index = ({
+const Index = ({
     form: { onChange, form, onSubmit },
 }) => {
     return (
@@ -45,4 +45,4 @@ const index = ({
     )
 }
 
-export default index
+export default Index

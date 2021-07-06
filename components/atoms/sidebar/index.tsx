@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import {useRouter} from 'next/router'
 
-const index = () => {
+
+const Index = () => {
     const router = useRouter()
     return (
         <div className="xl:z-50 xl:min-h-screen bg-white text-gray_text">
@@ -38,4 +39,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index
